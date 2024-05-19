@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #bebebe;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 90%;
+  margin-top: 1rem;
+  max-width: 500px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.wrapper .heading {
+  font-size: 2.5rem;
+}
+
+.dice-container {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dice-container.animate {
+  animation: animateDice 1s linear forwards;
+}
+
+.dice-container i {
+  font-size: 5rem;
+  
+}
+
+@keyframes animateDice {
+  0%{
+    transform: rotateZ(0deg);
+  }
+  25%{
+    transform: rotateZ(30deg);
+  }
+  50%{
+    transform: rotateZ(90deg);
+  }
+  65%{
+    transform: rotateZ(120deg);
+  }
+  80% {
+    transform: rotateZ(150deg);
+  }
+  100% {
+    transform: rotateZ(180deg);
+  }
+}
+
+.btn {
+  font-size: 2rem;
+  padding: 0.5rem 1.5rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(111, 202, 238);
+  cursor: pointer;
+}
+
+.outputWrapper {
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 50vh;
+  border-radius: 1rem;
+}
+
+.output {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: #ebe8e8;
+  height: 80px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.output h4 {
+  font-size: 1.85rem;
+  font-weight: 450;
+}
+
+.output i {
+  font-size: 2.5rem;
+}
+
+
